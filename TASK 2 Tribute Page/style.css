@@ -1,0 +1,107 @@
+.container{margin:auto;}
+body
+{
+    width:1920px;
+    background-color: #f8e0b3;
+    height:1080px;
+}
+
+@media screen and (min-width: 500px) {
+   body {
+      width:auto;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   body {
+      width:auto;
+   }
+}
+
+h1{
+   font-size: 50px;
+   background-color: black;
+   color: rgb(243, 243, 243);
+   font-family: Courier New,monospace); 
+   text-align: center;
+}
+h2{
+   font-size: 30px;
+   color: rgb(243, 243, 243);
+   font-family: 'Times New Roman', Times, serif; 
+   text-align: center;
+}
+.avatar {
+   vertical-align: middle;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;  
+ }
+img{
+   height: 300px;
+   width: 400px;
+   border-width:10px;
+   border-style: double;
+   border-color: rgb(255,184,28);
+   position:sticky;
+   top: 60px;
+   left: 80px;
+}
+
+section{
+      text-align:center;
+}
+P.blocktext {
+   margin-right: auto;
+   width: 30em
+}
+#para{
+   font-size: 20px;
+   color: rgb(243, 243, 243);
+   font-family: 'Times New Roman', Times, serif; 
+   text-align: center;
+}
+
+.avatar {
+   vertical-align:middle;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border-width:5px;
+   border-style:dotted;
+
+ }
+
+blockquote {
+   font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+   font-size: 25px;
+   border-radius: 25px;
+   color: azure;
+   text-align: center;
+   }
+   cite {
+   font-family: Noto Sans JP, sans-serif;
+   font-size: 1.6rem;
+   }
+.lift-animation::after 
+{
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 50px;
+   left: 50px;;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.322); opacity: 0;
+   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+   }
+.lift-animation:hover {
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+   -webkit-transform: scale(1.03, 1.03);
+   transform: scale(1.03, 1.03);
+   }
+.lift-animation:hover::after {
+   opacity: 1;
+   }
+
